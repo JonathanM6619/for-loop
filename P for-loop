@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Sep 14 11:27:55 2021
+
+@author: jm854
+"""
+
+goods = {"Iphone 13", "Samgung Galaxy 20", "Google pixel", "Mokia Flip phone", "Macbook Pro", "Deli Inspiron"}
+prices = {1299.99, 999.00, 550.79, 345.10, 140.99, 875.00}
+print(len(goods))
+
+'''
+#time consuming to go individually
+print(goods[0])
+print(goods[1])
+print(goods[0])
+print(goods[1])
+'''
+for g in goods:
+    print("Product: " + g)
+
+for p in prices:
+    print("Prices: ${:.2f}".format(p))
+    
+#Loop through indices or numbers
+for x in range(10):
+    print(x, end = " ")
+
+for y in range(25,45):
+    print(y, end = " ")
+
+for z in range(920,1000,10):
+    print(z, end = " ")
+    
+for i in range(5):
+    print("Product:" + goods[i], end = " ")
+    print("Prices: ${:.2f}".format(prices[i]))
